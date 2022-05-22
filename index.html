@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="price-track">
+        <select name="markets" id="market-name" onchange="marketSelect()">
+            <option value="" id="select-market" selected="selected">Select Market</option>
+        </select>
+        <select name="sybmol" id="market-symbol" onchange="symbolSelect()">
+            <option value="" id="select-symbol" selected="selected">Select Sybmol</option>
+        </select>
+        <input type="text" value="0" id="current-price">
+    </div>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
