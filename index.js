@@ -92,5 +92,8 @@ function remove() {
 function symbolSelect() {
    previous = null;
    ticksValue = drop2.value;
+    if(element.value !=0){
+      ws.send(JSON.stringify({ forget: forget_id }));
+   }
    ws.send(JSON.stringify({ ticks: ticksValue }));
 }
