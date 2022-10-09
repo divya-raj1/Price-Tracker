@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
 body {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: aliceblue;
+    font-family: 'Poppins', sans-serif;
 }
 .price-track{
     position: absolute;
-    top: 50%;
-    left: 35%;
+    top: 25%;
     width: 750px;
     height: 300px;
-    margin-top: -150px;
-    margin-left: -200px;
 }
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 #market-name, #market-symbol{
     width: 100%;
     margin-bottom: 20px;
@@ -25,4 +34,22 @@ body {
     border-radius: 8px;
     border: 1px solid #00000091;
     font-size: 60px;
+}
+
+@media screen and (max-width: 749px) {
+    .price-track{
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .price-track{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .price-track{
+        width: 300px;
+    }
 }

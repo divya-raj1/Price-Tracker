@@ -8,9 +8,11 @@ var ticksValue;
 var forget_id;
 var activeSymbol = [];
 var activeSymbolOrg = {};
+
 ws.onopen = function (evt) {
    ws.send(JSON.stringify({ active_symbols: 'brief' }));
 };
+
 ws.onmessage = function (msg) {
    var data = JSON.parse(msg.data);
    var arr_name = [];
